@@ -10,8 +10,8 @@ client = KalshiRestClient()
 # Config
 ET = ZoneInfo("America/New_York")
 SERIES_TICKER = "KXBTC15M"
-END_DT = dt.datetime(2026, 5, 27, 10, 30, tzinfo=ET)
-START_DT = END_DT - dt.timedelta(days=1)
+END_DT = dt.datetime(2026, 5, 1, 1, tzinfo=ET)
+START_DT = dt.datetime(2026, 1, 1, tzinfo=ET)
 STATUS = "settled"
 PERIOD_INTERVAL = 1  # minutes per candle
 OUT_PATH = "data/candles.parquet"
